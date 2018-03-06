@@ -1,0 +1,41 @@
+.column-style {
+	height: 300px;
+	margin-bottom: 20px;
+}
+
+.img-search {
+	width: 90%;
+	height: 80%; 
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn-search {
+	width: 100%;
+}
+
+h5 {
+	text-align: center;
+	margin: auto;
+}
+
+h6 {
+	margin: auto;
+}
+
+
+.nav-search {
+	width: 50%;
+	margin: auto;
+}
+
+body {
+	background: url();
+}
+
+a {
+	text-decoration: none;
+}
+
+
