@@ -3,39 +3,31 @@ import { renderForModal, pushToArray, createListForCollection } from './storage.
 import './css/introComponents.css';
 
 
-
-
-
-
-$("#search-submit").click(function() {
-	let inputValue = $("search-label").val();
-	if(inputValue != '')
-		callSearchApi(inputValue);
+$('#search-submit').click(() => {
+  const inputValue = $('search-label').val();
+  if (inputValue !== '') { callSearchApi(inputValue); }
 });
 
 
-$("#collectionEvent").click(function(){	
-	$("#collapsible").html(renderForModal());
+$('#collectionEvent').click(() => {
+  $('#collapsible').html(renderForModal());
 
-	createListForCollection();
-
+  createListForCollection();
 });
 
 
-$("#addCollectionButton").click(function(){
-	let create = $("#create").val();
-	let temp = {
-    	cname:create,
-    	content:[]
-	}
-	pushToArray(temp);
-
+$('#addCollectionButton').click(() => {
+  const create = $('#create').val();
+  const temp = {
+    cname: create,
+    content: [],
+  };
+  pushToArray(temp);
 });
-
 
 
 $(document).ready(() => {
-			$('#modal1').modal();
-			$('#modal2').modal();
-			 $('#collapsible').collapsible();
-		});
+  $('#modal1').modal();
+  $('#modal2').modal();
+  $('#collapsible').collapsible();
+});

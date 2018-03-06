@@ -6,7 +6,7 @@ module.exports = {
 
 	entry:{
 		app: './src/Controller.js',
-		print: './src/fetch.js'
+		//print: './src/fetch.js'
 	},
 	devtool: 'inline-source-map',
 	plugins: [
